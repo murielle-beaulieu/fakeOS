@@ -4,7 +4,7 @@ export const currTime = () => {
   const minutes = today.getMinutes();
   const seconds = today.getSeconds();
   console.log(`${hours}:${minutes}:${seconds}`);
-  return `${hours}:${minutes}:${seconds}`
+  return `${hours}:${minutes}: ${seconds} `
 }
 
 // setInterval((currTime), 1000);
