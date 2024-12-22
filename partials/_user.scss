@@ -1,15 +1,7 @@
-.navbar {
-  background-color: #245DDA;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  height: 3em;
-  width: 100%;
-  bottom: 0;
-}
-
-#start:hover {
-  background-color: #3e7afb;
+#start {
+  &:hover {
+    background-color: #3e7afb;
+  }
 }
 
 #menu-icon {
@@ -24,7 +16,7 @@
   position: absolute;
   bottom: 6em;
   padding-bottom: 0.5em;
-}
+  }
 
 .invisible {
   display: none;
@@ -41,7 +33,7 @@
 #user-icon {
   height: 4em;
   width: 4em;
-  border: solid 0.15em white;
+  border: solid .15em white;
 }
 
 #user-details {
@@ -64,21 +56,3 @@
   background-color: azure;
   border: 1px black solid;
 }
-
-body {
-  background-image: url(./assets/bliss.jpg);
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow-y: hidden;
-}
-
-#clock {
-  background-color: white;
-  height: 3em;
-  margin-left: 10em;
-}
-
-/*# sourceMappingURL=styles.css.map */
