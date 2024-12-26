@@ -3,7 +3,7 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
-  height: 3em;
+  height: 2.5em;
   width: 100%;
   bottom: 0;
 }
@@ -13,8 +13,8 @@
 }
 
 #menu-icon {
-  width: 2em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 #start-menu {
@@ -31,7 +31,7 @@
 }
 
 #user {
-  display: flex; /* Changed from block to flex */
+  display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #1e50bd;
@@ -65,6 +65,11 @@
   border: 1px black solid;
 }
 
+#pgrm {
+  height: 100%;
+  width: 12em;
+}
+
 body {
   background-image: url(./assets/bliss.jpg);
   background-size: cover;
@@ -79,6 +84,22 @@ body {
   background-color: white;
   height: 3em;
   margin-left: 10em;
+}
+
+#start-btn {
+  background-color: #008D00;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  border-radius: 20%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

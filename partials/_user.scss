@@ -5,8 +5,8 @@
 }
 
 #menu-icon {
-  width: 2em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 #start-menu {
@@ -23,7 +23,7 @@
 }
 
 #user {
-  display: flex; /* Changed from block to flex */
+  display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #1e50bd;

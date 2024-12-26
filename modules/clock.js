@@ -15,7 +15,7 @@ export const currTime = () => {
     seconds = `0${seconds}`;
   }
 
-  return `${hours}:${minutes}: ${seconds} `
+  return `${hours}:${minutes}:${seconds} `
 }
 
 window.addEventListener("load",(e) => {
