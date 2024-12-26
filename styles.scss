@@ -1,4 +1,6 @@
 @use "./partials/navbar";
+@use "./partials/user";
+@use "./partials/fake-pgrm";
 
 body {
   background-image: url(./assets/bliss.jpg);
@@ -10,17 +12,24 @@ body {
   overflow-y: hidden;
 }
 
-#desktop {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  position: static;
-  height: 100%;
-  width: 100%;
-}
-
-p {
+#clock {
   background-color: white;
   height: 3em;
   margin-left: 10em;
+}
+
+#start-btn {
+  background-color: #008D00;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  border-radius: 20%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

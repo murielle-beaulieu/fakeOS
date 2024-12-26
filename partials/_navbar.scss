@@ -1,9 +1,9 @@
-.menu-bar {
+.navbar {
   background-color: #245DDA;
   position: fixed;
   display: flex;
-  justify-content: center;
-  height: 3em;
+  justify-content: space-between;
+  height: 2.5em;
   width:100%;
   bottom: 0;
 }
