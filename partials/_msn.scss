@@ -1,0 +1,30 @@
+#pgrm {
+  height: 100%;
+  width: 12em;
+}
+
+#msn {
+  height: 20em;
+  width: 30em;
+  padding: 0;
+}
+
+.pgrm--nav {
+  background-color: #1e50bd;
+  color: white;
+  height:2em;
+  width: 100%;
+}
+
+#msn-avatar {
+  height: 7em;
+  width: 11em;
+}
+
+#msn-login {
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

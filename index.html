@@ -8,7 +8,21 @@
   <title>Fake OS Project</title>
 </head>
 <body>
-  <dialog id="wmp"><p>wahoo</p></dialog>
+  <dialog id="msn">
+    <div class="pgrm--nav"><img id="menu-icon" src="./assets/msn.webp" alt="MSN">MSN</div>
+    <form action="#">
+      <div id="msn-login">
+        <div>
+          <img id="msn-avatar" src="./assets/default-msn.webp" alt="MSN Default Avatar">
+        </div>
+        <label for="email">email:</label>
+        <input type="text" name="email" id="email">
+        <label for="pw">password:</label>
+        <input type="password" name="pw" id="pw">
+        <button>Login</button>
+      </div>
+    </form>
+  </dialog>
   <div id="desktop">
     <div id="start-menu" class="invisible">
       <div id="user">
@@ -27,7 +41,7 @@
     </div>
     <nav class="navbar">
       <button id="start-btn"><img id="menu-icon" src="./assets/menu-icon.png" alt="Windows XP menu icon"> start</button>
-      <button id="open-pgrm"><img id="menu-icon" src="./assets/windows-media-player.webp" alt="Windows Media Player">Media Player</button>
+      <button id="open-pgrm"><img id="menu-icon" src="./assets/msn.webp" alt="MSN">MSN</button>
       <div id="clock"></div>
     </nav>
   </div>
