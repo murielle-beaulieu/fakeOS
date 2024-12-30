@@ -9,11 +9,11 @@
 </head>
 <body>
   <dialog id="msn">
-    <div class="pgrm--nav"><img id="menu-icon" src="./assets/msn.webp" alt="MSN">MSN</div>
+    <div class="pgrm--nav"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN</div>
     <form action="#">
       <div id="msn-login">
         <div>
-          <img id="msn-avatar" src="./assets/default-msn.webp" alt="MSN Default Avatar">
+          <img id="msn-avatar" src="./assets/menu-apps/default-msn.webp" alt="MSN Default Avatar">
         </div>
         <label for="email">email:</label>
         <input type="text" name="email" id="email">
@@ -27,21 +27,30 @@
     <div id="start-menu" class="invisible">
       <div id="user">
         <div id="user-details"><img id="user-icon" src="./assets/astronaut.webp" alt="astronaut user image"></div>
-        <div id="user-details"><p>Murielle's</p></div>
+        <div id="user-details--username"><p>Murielle's</p></div>
       </div>
-      <div class="prgm">program one</div>
-      <div class="prgm">program two</div>
-      <div class="prgm">program three</div>
-      <div class="prgm">program four</div>
-      <div class="prgm">program five</div>
-      <div class="prgm">program four</div>
-      <div class="prgm">program five</div>
-      <div class="prgm">program four</div>
-      <div class="prgm">program five</div>
+      <div id="applications">
+        <section class="panel">
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/internet-exp.png" alt="Internet Explorer">Internet</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/email.jpg" alt="Email">Email</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/windows-media-player.jpg" alt="Windows Media Player">Windows Media Player</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN Messenger</div>
+        </section>
+        <section class="panel">
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/documents.webp" alt="My Documents">My Documents</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/pictures.png" alt="My Pictures">My Pictures</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/music.png" alt="My Music">My Music</div>
+          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/computer.png" alt="My Computer">My Computer</div>
+        </section>
+      </div>
+        <div id="turn-on-off">
+          <button>OFF</button>
+          <button>REBOOT</button>
+        </div>
     </div>
     <nav class="navbar">
-      <button id="start-btn"><img id="menu-icon" src="./assets/menu-icon.png" alt="Windows XP menu icon"> start</button>
-      <button id="open-pgrm"><img id="menu-icon" src="./assets/msn.webp" alt="MSN">MSN</button>
+      <button id="start-btn"><img class="menu-icon" src="./assets/windows-xp.png" alt="Windows XP menu icon"> start</button>
+      <button id="open-pgrm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN</button>
       <div id="clock"></div>
     </nav>
   </div>

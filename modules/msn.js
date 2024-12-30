@@ -13,5 +13,5 @@ button.addEventListener('click', (e) => {
   //   dialog.classList.add("opened");
   //   dialog.show();
   // }
-  dialog.hasAttribute("open") ? dialog.close() : dialog.showModal();
+  dialog.hasAttribute("open") ? dialog.close() : dialog.show();
 })
