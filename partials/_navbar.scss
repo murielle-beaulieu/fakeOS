@@ -1,9 +1,11 @@
 .navbar {
-  background-color: #245DDA;
+  // background-color: #245DDA;
+  background-color: #0046D5;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 30px -12px inset, rgba(255, 255, 255, 0.143) 0px 18px 36px -18px inset;
   position: fixed;
   display: flex;
   justify-content: space-between;
-  height: 2.5em;
+  height: 2em;
   width:100%;
   bottom: 0;
 }

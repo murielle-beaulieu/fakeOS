@@ -1,5 +1,5 @@
 @use "./partials/navbar";
-@use "./partials/user";
+@use "./partials/menu";
 @use "./partials/msn";
 
 body {
@@ -26,10 +26,19 @@ body {
   font-size: medium;
   border: none;
   border-radius: 20%;
+  width: 6em;
+  &:hover {
+    background-color:#079107;
+  }
 }
 
 button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu-icon {
+  width: 1.5em;
+  height: 1.5em;
 }

@@ -1,3 +1,5 @@
+import { createEl } from "./dom.js";
+
 const start = document.querySelector("#start-btn");
 const menu = document.querySelector("#start-menu");
 
