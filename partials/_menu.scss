@@ -22,6 +22,7 @@
   height: 4em;
   width: 4em;
   border: solid .15em white;
+  border-radius: 5px;
 }
 
 #user-details {
@@ -37,14 +38,14 @@
   }
 }
 
-#applications {
+#app-list{
   display: flex;
   justify-content: columns;
   width: 20em;
 }
 
 .panel {
-  height: 26em;
+  height: 20em;
   background: white;
 }
 
@@ -55,4 +56,21 @@
   height: 4em;
   width: 10.5em;
   background-color: azure;
+}
+
+
+/* SHUTDOWN SECTION */
+
+.shutdown-icon{
+  height: 3em;
+  width: 3em;
+}
+
+#shutdown {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1em;
+  margin-right: 3em;
+  color: white;
 }

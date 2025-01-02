@@ -1,0 +1,16 @@
+#clock {
+  background-color:#1190ea;
+  width: 6em;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  margin-left: auto;
+  border-left: solid rgb(91, 91, 91) 0.1em;
+  p {
+    font-family: 'Tahoma',sans-serif;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: white;
+    text-align: end;
+    margin: auto 1.5em auto auto  }
+}

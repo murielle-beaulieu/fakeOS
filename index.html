@@ -15,11 +15,11 @@
         <div>
           <img id="msn-avatar" src="./assets/menu-apps/default-msn.webp" alt="MSN Default Avatar">
         </div>
-        <label for="email">email:</label>
-        <input type="text" name="email" id="email">
-        <label for="pw">password:</label>
-        <input type="password" name="pw" id="pw">
-        <button>Login</button>
+        <label for="email">E-mail address:</label>
+        <input type="text" name="email" id="email" required>
+        <label for="pw">Password:</label>
+        <input type="password" name="pw" id="pw" required>
+        <button id="login">Login</button>
       </div>
     </form>
   </dialog>
@@ -29,7 +29,7 @@
         <div id="user-details"><img id="user-icon" src="./assets/astronaut.webp" alt="astronaut user image"></div>
         <div id="user-details--username"><p>Murielle's</p></div>
       </div>
-      <div id="applications">
+      <div id="app-list">
         <section class="panel">
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/internet-exp.png" alt="Internet Explorer">Internet</div>
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/email.jpg" alt="Email">Email</div>
@@ -43,14 +43,14 @@
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/computer.png" alt="My Computer">My Computer</div>
         </section>
       </div>
-        <div id="turn-on-off">
-          <button>OFF</button>
-          <button>REBOOT</button>
+        <div id="shutdown">
+          <img class="shutdown-icon" src="./assets/turn-off.png" alt="Turn Off Button">
+          <p>Turn Off</p>
         </div>
     </div>
     <nav class="navbar">
-      <button id="start-btn"><img class="menu-icon" src="./assets/windows-xp.png" alt="Windows XP menu icon"> start</button>
-      <button id="open-pgrm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN</button>
+      <button id="start-btn"><img class="menu-icon" src="./assets/windows-xp.png" alt="Windows XP menu icon"><p>start</p></button>
+      <button id="open-pgrm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN"><p>MSN Messenger</p></button>
       <div id="clock"></div>
     </nav>
   </div>

@@ -1,6 +1,8 @@
 @use "./partials/navbar";
 @use "./partials/menu";
 @use "./partials/msn";
+@use "./partials/_desktop";
+@use "./partials/clock";
 
 body {
   background-image: url(./assets/bliss.jpg);
@@ -10,35 +12,5 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: hidden;
-}
-
-#clock {
-  background-color: white;
-  height: 3em;
-  margin-left: 10em;
-}
-
-#start-btn {
-  background-color: #008D00;
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  font-size: medium;
-  border: none;
-  border-radius: 20%;
-  width: 6em;
-  &:hover {
-    background-color:#079107;
-  }
-}
-
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-icon {
-  width: 1.5em;
-  height: 1.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
