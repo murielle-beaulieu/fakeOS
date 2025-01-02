@@ -1,11 +1,43 @@
 .navbar {
-  // background-color: #245DDA;
-  background-color: #0046D5;
-  box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 30px -12px inset, rgba(255, 255, 255, 0.143) 0px 18px 36px -18px inset;
+  background-color: #235cdb;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 2em;
   width:100%;
   bottom: 0;
+}
+
+#start-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #209922;
+  color: white;
+  font-weight: 650;
+  font-style: oblique;
+  font-size: 1.15em;
+  text-shadow: 1px 1px 2px black;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  width: 6.5em;
+  margin-right: 1em;
+  &:hover {
+    background-color:#24a526;
+  }
+  p {
+    margin-left: 0;
+  }
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.5em;
 }
