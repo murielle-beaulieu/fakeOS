@@ -12,7 +12,7 @@ button.addEventListener('click', (e) => {
 })
 
 const msnLoginBtn = document.querySelector("#login");
-const msnWindow = document.querySelector('#msn-login');
+const msnLoginWindow = document.querySelector('#msn-login');
 const msnProgram = document.querySelector('#msn');
 
 const createContacts = async () => {
@@ -39,7 +39,7 @@ const createContacts = async () => {
 msnLoginBtn.addEventListener('click', (e) => {
   e.preventDefault();
   console.log("msn logged in");
-  deleteChild(msnWindow);
+  deleteChild(msnLoginWindow);
   createContacts();
 })
 
