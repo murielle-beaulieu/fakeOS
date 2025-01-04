@@ -1,6 +1,7 @@
 @use "./partials/navbar";
 @use "./partials/menu";
 @use "./partials/msn";
+@use "./partials/msn-chat";
 @use "./partials/_desktop";
 @use "./partials/clock";
 
@@ -13,4 +14,16 @@ body {
   width: 100%;
   overflow-y: hidden;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#pgrm {
+  height: 100%;
+  width: 12em;
+}
+
+#open-pgrm {
+  margin-left: 0;
+  width: 11em;
+  font-size: 0.9em;
+  justify-content: space-between;
 }

@@ -1,10 +1,11 @@
 #start-menu {
-  height: 30em;
-  width: 21em;
+  height: 40em;
+  width: 30em;
   position: absolute;
   bottom: 0em;
   padding-bottom: 0.5em;
   background-color: #1e50bd;
+  font-size: 0.9em;
 }
 
 .invisible {
@@ -15,12 +16,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.25em;
+  padding: 0.5em;
+  height: 5.25em;
 }
 
 #user-icon {
-  height: 4em;
-  width: 4em;
+  height: 4.5em;
+  width: 4.5em;
   border: solid .15em white;
   border-radius: 5px;
 }
@@ -33,8 +35,8 @@
   &--username {
     margin-left: 1em;
     color: white;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.25em;
+    font-weight: 500;
   }
 }
 
@@ -45,25 +47,53 @@
 }
 
 .panel {
-  height: 20em;
+  height: 28.5em;
   background: white;
+  &--right {
+    background: #d2e5fa;
+    border-left: #3570f0 1px solid;
+  }
 }
 
 .prgm {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 4em;
-  width: 10.5em;
-  background-color: azure;
+  font-size: 1em;
+  padding: 0.5em 0;
+  height: 3em;
+  width: 15em;
+  &:hover {
+    background-color: #1e50bd;
+    color: white;
+  }
 }
 
+#see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-top: grey 1px solid;
+  margin-top: 9.5em;
+  &:hover {
+    background-color: #1e50bd;
+    color: white;
+  }
+  p {
+    padding-bottom: 0.5px;
+  }
+}
 
 /* SHUTDOWN SECTION */
 
 .shutdown-icon{
-  height: 3em;
-  width: 3em;
+  height: 2em;
+  width: 2em;
+}
+
+.shutdown-btn {
+  padding: 0;
 }
 
 #shutdown {
@@ -73,4 +103,16 @@
   font-size: 1em;
   margin-right: 3em;
   color: white;
+}
+
+.menu-icon {
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 0.5em;
+}
+
+.nav-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 0.5em;
 }
