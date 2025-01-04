@@ -1,24 +1,26 @@
-#pgrm {
-  height: 100%;
-  width: 12em;
-}
-
-#open-pgrm {
-  margin-left: 0;
-  width: 11em;
-  font-size: 0.8em;
-  justify-content: space-between;
-}
-
 #msn {
   height: 30em;
-  width: 40em;
+  width: 20em;
   padding: 0;
   margin-top: 9em;
-  img {
-    height:1em;
-    width:1em;
+  #msn-avatar {
+    height: 6em;
+    width: 6em;
+    border: 2px silver solid;
+    border-radius: 5px;
+    margin: 1em;
   }
+  img {
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+
+
+
+.pgrm-icon {
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .pgrm--nav {
@@ -26,6 +28,15 @@
   color: white;
   height:2em;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pgrm-name-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #msn-avatar {
@@ -43,4 +54,9 @@
 
 .contact {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  p {
+    margin: 1px;
+  }
 }

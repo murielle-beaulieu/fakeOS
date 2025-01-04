@@ -43,7 +43,7 @@ button {
   bottom: 0em;
   padding-bottom: 0.5em;
   background-color: #1e50bd;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .invisible {
@@ -113,7 +113,11 @@ button {
   align-items: center;
   font-weight: bold;
   border-top: grey 1px solid;
-  margin-top: 9em;
+  margin-top: 9.5em;
+}
+#see-all:hover {
+  background-color: #1e50bd;
+  color: white;
 }
 #see-all p {
   padding-bottom: 0.5px;
@@ -121,13 +125,12 @@ button {
 
 /* SHUTDOWN SECTION */
 .shutdown-icon {
-  height: 4em;
-  width: 4em;
-}
-.shutdown-icon--lo {
   height: 2em;
   width: 2em;
-  padding: 0.6em;
+}
+
+.shutdown-btn {
+  padding: 0;
 }
 
 #shutdown {
@@ -151,27 +154,27 @@ button {
   margin: 0 0.5em;
 }
 
-#pgrm {
-  height: 100%;
-  width: 12em;
-}
-
-#open-pgrm {
-  margin-left: 0;
-  width: 11em;
-  font-size: 0.8em;
-  justify-content: space-between;
-}
-
 #msn {
   height: 30em;
-  width: 40em;
+  width: 20em;
   padding: 0;
   margin-top: 9em;
 }
+#msn #msn-avatar {
+  height: 6em;
+  width: 6em;
+  border: 2px silver solid;
+  border-radius: 5px;
+  margin: 1em;
+}
 #msn img {
-  height: 1em;
-  width: 1em;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.pgrm-icon {
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .pgrm--nav {
@@ -179,6 +182,15 @@ button {
   color: white;
   height: 2em;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pgrm-name-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #msn-avatar {
@@ -196,6 +208,17 @@ button {
 
 .contact {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact p {
+  margin: 1px;
+}
+
+.modal {
+  height: 5em;
+  width: 5em;
+  background: white;
 }
 
 #clock {
@@ -225,6 +248,18 @@ body {
   width: 100%;
   overflow-y: hidden;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+#pgrm {
+  height: 100%;
+  width: 12em;
+}
+
+#open-pgrm {
+  margin-left: 0;
+  width: 11em;
+  font-size: 0.9em;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */

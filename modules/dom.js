@@ -4,6 +4,7 @@ export const createEl = (el, text, parent, addClass="") => {
   if (addClass != "") {element.classList.add(addClass)};
   const par = document.querySelector(parent);
   par.appendChild(element);
+  return element;
 }
 
 export const deleteChild = (parent) => {
@@ -11,7 +12,3 @@ export const deleteChild = (parent) => {
     parent.removeChild(parent.firstChild);
 }
 }
-
-// export const createImg = (el, src, alt, parent) => {
-//   const el = document.create
-// }

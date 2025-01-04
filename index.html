@@ -9,11 +9,17 @@
 </head>
 <body>
   <dialog id="msn">
-    <div class="pgrm--nav"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN</div>
+    <div class="pgrm--nav">
+      <div class="pgrm-name-logo">
+        <img class="pgrm-icon" src="./assets/menu-apps/msn.webp" alt="MSN">
+        <p>MSN</p>
+      </div>
+      <button id="close-pgrm">x</button>
+    </div>
     <form action="#">
       <div id="msn-login">
         <div>
-          <img id="msn-avatar" src="./assets/menu-apps/default-msn.webp" alt="MSN Default Avatar">
+          <img id="msn-avatar" src="./assets/msn/msn-avatar.png" alt="MSN Default Avatar">
         </div>
         <label for="email">E-mail address:</label>
         <input type="text" id="email" required>
@@ -34,8 +40,8 @@
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/internet-exp.png" alt="Internet Explorer">Internet</div>
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/email.jpg" alt="Email">Email</div>
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/windows-media-player.jpg" alt="Windows Media Player">Windows Media Player</div>
-          <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN Messenger</div>
-          <div class="pgrm" id="see-all"><p>All Programs</p><img class="menu-icon" src="./assets/menu-apps/all-pgrm.png" alt="See All Programs Button"></div>
+          <button id="open-msn" class="prgm"><img class="menu-icon" src="./assets/menu-apps/msn.webp" alt="MSN">MSN Messenger</button>
+          <div id="see-all"><p>All Programs</p><img class="menu-icon" src="./assets/menu-apps/see-all-pgrm.png" alt="See All Programs Button"></div>
         </section>
         <section class="panel--right">
           <div class="prgm"><img class="menu-icon" src="./assets/menu-apps/documents.webp" alt="My Documents">My Documents</div>
@@ -45,15 +51,15 @@
         </section>
       </div>
         <div id="shutdown">
-          <img class="shutdown-icon--lo" src="./assets/menu-apps/log-off.png" alt="Log Off Button">
+          <button class="shutdown-btn"><img class="shutdown-icon" src="./assets/menu-apps/logoff.png" alt="Log Off Button"></button>
           <p>Log Off</p>
-          <img class="shutdown-icon" src="./assets/turn-off.png" alt="Turn Off Button">
+          <button class="shutdown-btn"><img class="shutdown-icon" src="./assets/menu-apps/turnoff.png" alt="Turn Off Button"></button>
           <p>Turn Off</p>
         </div>
     </div>
     <nav class="navbar">
       <button id="start-btn"><img class="nav-icon" src="./assets/windows-xp.png" alt="Windows XP menu icon"><p>start</p></button>
-      <button id="open-pgrm"><img class="nav-icon" src="./assets/menu-apps/msn.webp" alt="MSN"><p>MSN Messenger</p></button>
+      <button id="open-pgrm" class="invisible"><img class="nav-icon" src="./assets/menu-apps/msn.webp" alt="MSN"><p>MSN Messenger</p></button>
       <div id="clock"></div>
     </nav>
   </div>

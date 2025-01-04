@@ -2,8 +2,9 @@ import { deleteChild } from "./dom.js";
 import { createEl } from "./dom.js";
 
 
-const dialog = document.querySelector("#msn");
+// opening msn from the toolbar
 
+const dialog = document.querySelector("#msn");
 const button = document.querySelector("#open-pgrm")
 
 button.addEventListener('click', (e) => {
@@ -11,30 +12,67 @@ button.addEventListener('click', (e) => {
   dialog.hasAttribute("open") ? dialog.close() : dialog.show();
 })
 
+// closing the toolbar when program is open
+
+const closePgrm = document.querySelector("#close-pgrm");
+
+closePgrm.addEventListener('click', e => {
+  e.preventDefault();
+  dialog.close();
+  }
+)
+
+// login and create a list of contact
+// - API call to randomly generate users
+
 const msnLoginBtn = document.querySelector("#login");
 const msnLoginWindow = document.querySelector('#msn-login');
 const msnProgram = document.querySelector('#msn');
+const desktop = document.querySelector('#desktop');
+
 
 const createContacts = async () => {
   const response = await fetch("https://randomuser.me/api/?results=15&nat=gb,us,es,ca,fr");
-  console.log(response);
   const data = await response.json();
-  console.log(data);
 
   let i = 0;
-
   const contactNames = [];
   while (i < 15) {
     contactNames.push(data.results[i].name.first);
     i++;
   }
-  console.log(contactNames);
 
   contactNames.forEach((contact) => {
-    const contactList = createEl('div', contact, "#msn","contact");
-    msnProgram.appendChild(document.createElement('img')).src='./assets/online.png';
+  // didn't use my own createEl because I specifically wanted the img to be before the contact name
+    const img = document.createElement('img');
+    img.src = './assets/msn/online.png';
+    const contactList = document.createElement('div');
+    contactList.appendChild(img);
+    contactList.classList.add('contact')
+    const name = document.createElement("button");
+    name.setAttribute('class','open-chat')
+    name.textContent = contact;
+    contactList.appendChild(name);
+    msnProgram.appendChild(contactList);
+
+    contactList.addEventListener('click', (e) => {
+      e.preventDefault();
+      createChat(contact);
+      console.log(contact);
+    })
   })
+
 }
+
+const createChat = (contactSelected) => {
+  const msnChat = document.createElement("div");
+  msnChat.classList.add("modal");
+  msnChat.textContent = contactSelected;
+  desktop.appendChild(msnChat);
+}
+
+
+// -remove the login form and display contact list
 
 msnLoginBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -42,10 +80,3 @@ msnLoginBtn.addEventListener('click', (e) => {
   deleteChild(msnLoginWindow);
   createContacts();
 })
-
-// export const createEl = (el, text, parent) => {
-//   const element = document.createElement(el);
-//   element.innerText = text;
-//   const par = document.querySelector(parent);
-//   par.appendChild(element);
-// }
