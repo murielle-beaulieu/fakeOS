@@ -38,11 +38,6 @@ const createChatAvatar = (chatWindow) => {
   yourAvatar.classList.add("chat-avatar");
   displayAvatars.appendChild(yourAvatar);
 
-    const sendChatBtn = document.createElement("button");
-  sendChatBtn.classList.add("btn-send");
-  sendChatBtn.textContent ="send";
-  displayAvatars.appendChild(sendChatBtn);
-
   chatWindow.appendChild(displayAvatars);
 }
 
@@ -61,19 +56,19 @@ const createChatContent = (chatWindow, contactSelected) => {
   chatTextField.classList.add("chat-textfield");
   chatSend.appendChild(chatTextField);
 
-  // const sendChatBtn = document.createElement("button");
-  // sendChatBtn.classList.add("btn-send");
-  // sendChatBtn.textContent ="send";
-  // // chatSend.appendChild(sendChatBtn);
+  const sendChatBtn = document.createElement("button");
+  sendChatBtn.classList.add("btn-send");
+  sendChatBtn.textContent ="send";
+  chatSend.appendChild(sendChatBtn);
+
+  chatWindow.appendChild(chatSend);
 
   // when pressing send button, the message gets added to the chat history
-  sendChatBtn.addEventListener('click', e => {
+  chatSend.addEventListener('click', e => {
     e.preventDefault();
     let newMessage = document.createElement("p");
     newMessage.innerText = `you said: ${chatTextField.value}`;
     chatHistory.appendChild(newMessage);
     chatTextField.value = "";
   })
-
-  chatWindow.appendChild(chatSend);
 }
