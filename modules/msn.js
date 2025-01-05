@@ -1,5 +1,5 @@
 import { deleteChild } from "./dom.js";
-import { createEl } from "./dom.js";
+import { createChat } from "./msn-chat.js";
 
 
 // opening msn from the toolbar
@@ -42,14 +42,15 @@ const createContacts = async () => {
     i++;
   }
 
+
   contactNames.forEach((contact) => {
   // didn't use my own createEl because I specifically wanted the img to be before the contact name
     const img = document.createElement('img');
     img.src = './assets/msn/online.png';
-    const contactList = document.createElement('div');
+    const contactList = document.createElement('button');
     contactList.appendChild(img);
     contactList.classList.add('contact')
-    const name = document.createElement("button");
+    const name = document.createElement("p");
     name.setAttribute('class','open-chat')
     name.textContent = contact;
     contactList.appendChild(name);
@@ -58,19 +59,12 @@ const createContacts = async () => {
     contactList.addEventListener('click', (e) => {
       e.preventDefault();
       createChat(contact);
+      // contactList.toggleAttribute('disabled');
       console.log(contact);
     })
   })
 
 }
-
-const createChat = (contactSelected) => {
-  const msnChat = document.createElement("div");
-  msnChat.classList.add("modal");
-  msnChat.textContent = contactSelected;
-  desktop.appendChild(msnChat);
-}
-
 
 // -remove the login form and display contact list
 
