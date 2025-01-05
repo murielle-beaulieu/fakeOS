@@ -16,18 +16,29 @@
   color: white;
   font-weight: 650;
   font-style: oblique;
-  font-size: 1.15em;
+  font-size: 1.25em;
   text-shadow: 1px 1px 2px black;
   border: none;
   border-radius: 0 50px 50px 0;
   width: 6.5em;
-  margin-right: 1em;
+  margin-right: 3em;
 }
 #start-btn:hover {
   background-color: #24a526;
 }
 #start-btn p {
   margin-left: 0;
+}
+
+#open-pgrm {
+  margin-left: 0;
+  width: 12em;
+  font-size: 1em;
+  justify-content: space-between;
+  background-color: #1190ea;
+  border: 1px solid navy;
+  color: white;
+  padding-right: 1em;
 }
 
 button {
@@ -44,10 +55,6 @@ button {
   padding-bottom: 0.5em;
   background-color: #1e50bd;
   font-size: 0.9em;
-}
-
-.invisible {
-  display: none;
 }
 
 #user {
@@ -158,14 +165,15 @@ button {
   height: 30em;
   width: 20em;
   padding: 0;
-  margin-top: 9em;
+  margin-top: 6em;
+  background-color: #e9ecfb;
 }
 #msn #msn-avatar {
   height: 6em;
   width: 6em;
-  border: 2px silver solid;
+  border: 5px silver solid;
   border-radius: 5px;
-  margin: 1em;
+  margin: 3em 0 1em 0;
 }
 #msn img {
   height: 1.5em;
@@ -205,6 +213,15 @@ button {
   justify-content: center;
   align-items: center;
 }
+#msn-login label {
+  margin: 0.25em;
+}
+#msn-login #login {
+  margin: 2em;
+  background-color: #e9ecfb;
+  border: #424b68 1px solid;
+  padding: 0.5em 1em;
+}
 
 .contact {
   display: flex;
@@ -215,10 +232,91 @@ button {
   margin: 1px;
 }
 
-.modal {
+.chat-window {
+  height: 30em;
+  width: 35em;
+  background-color: #e9ecfb;
+  right: 0;
+  left: 38em;
+  top: 18em;
+  padding: 0;
+  display: inline-block;
+}
+
+.contact {
+  width: 100%;
+}
+
+.open-chat {
+  margin: 1px;
+}
+
+.chat-avatar {
+  height: 6em;
+  width: 6em;
+  border: 0.5em solid rgb(246, 247, 247);
+  margin-right: auto;
+}
+
+.chat-send {
+  display: inline-block;
+  width: 70%;
+}
+
+.chat-textfield {
+  width: 100%;
+  height: 8em;
+  padding-bottom: 1em;
+}
+
+.chat-history {
+  width: 100%;
+  height: 15em;
+  padding-bottom: 1em;
+  border: solid red 1px;
+}
+
+.btn-send {
   height: 5em;
   width: 5em;
-  background: white;
+  margin: 0 3em;
+}
+
+.chat-nav {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  background-color: #c2cde8;
+}
+
+.display-avatar {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+}
+.display-avatar img {
+  margin: em 0.5em 0 0.5em 0;
+}
+
+.desktop-icon {
+  height: 6em;
+  width: 6em;
+  left: 92%;
+  top: 45em;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.desktop-icon img {
+  height: 2.75em;
+  width: 2.75em;
+}
+.desktop-icon p {
+  font-size: 1em;
+  color: white;
 }
 
 #clock {
@@ -233,7 +331,7 @@ button {
 #clock p {
   font-family: "Tahoma", sans-serif;
   font-weight: 400;
-  font-size: 0.85em;
+  font-size: 0.9em;
   color: white;
   text-align: end;
   margin: auto 1.5em auto auto;
@@ -255,11 +353,8 @@ body {
   width: 12em;
 }
 
-#open-pgrm {
-  margin-left: 0;
-  width: 11em;
-  font-size: 0.9em;
-  justify-content: space-between;
+.invisible {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

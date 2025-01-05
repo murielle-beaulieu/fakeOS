@@ -1,5 +1,67 @@
-.modal {
+.chat-window {
+  height: 30em;
+  width: 35em;
+  background-color: #e9ecfb;
+  right: 0;
+  left: 38em;
+  top: 18em;
+  padding: 0;
+  display: inline-block;
+}
+
+.contact {
+  width: 100%;
+}
+
+.open-chat {
+  margin: 1px;
+}
+
+.chat-avatar {
+  height: 6em;
+  width: 6em;
+  border: 0.5em solid rgb(246, 247, 247);
+  margin-right: auto;
+}
+
+.chat-send {
+  display: inline-block;
+  width: 70%;
+}
+
+.chat-textfield {
+  width: 100%;
+  height: 8em;
+  padding-bottom: 1em;
+}
+
+.chat-history {
+  width:100%;
+  height: 15em;
+  padding-bottom: 1em;
+  border: solid red 1px;
+}
+
+.btn-send {
   height: 5em;
   width: 5em;
-  background: white;
+  margin: 0 3em;
+
+}
+
+.chat-nav {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  background-color: #c2cde8;
+}
+
+.display-avatar {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  img {
+    margin:em 0.5em 0 0.5em 0;
+  }
 }
