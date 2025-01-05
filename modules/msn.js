@@ -44,7 +44,6 @@ const createContacts = async () => {
 
 
   contactNames.forEach((contact) => {
-  // didn't use my own createEl because I specifically wanted the img to be before the contact name
     const img = document.createElement('img');
     img.src = './assets/msn/online.png';
     const contactList = document.createElement('button');
@@ -60,7 +59,6 @@ const createContacts = async () => {
       e.preventDefault();
       createChat(contact);
       // contactList.toggleAttribute('disabled');
-      console.log(contact);
     })
   })
 
