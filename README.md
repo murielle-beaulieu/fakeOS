@@ -4,8 +4,7 @@
 
 ## Demo & Snippets
 
--   Include hosted link
--   Include images of app if CLI or Client App
+- https://murielle-beaulieu.github.io/fakeOS/
 
 ---
 
@@ -25,79 +24,36 @@
   - Your icons and menu should add event listener for the click event, don't use the html onclick attribute
   - Give your functions and variables good names
   - Use the arrow syntax to declare functions
-
-  Github
-  - Create a repo on github with a README
-  - Clone Repo
-  - Create and checkout develop branch
-  - Push all changes to your develop branch
-  - When submitting create a pull request from develop into main for review
-
-Add coach as a reviewer
--   purpose of project
--   stack used and why
-
 ---
 
-## Build Steps
-
--   how to build / run project
--   use proper code snippets if there are any commands to run
-
----
 
 ## Design Goals / Approach
 
--   Design goals
--   why did you implement this the way you did?
+-   Windows XP chosen as the OS
 
 ---
 
 ## Features
 
--   What features does the project have?
--   list them...
+-   MSN Messenger chosen as the program
 
 ---
 
 ## Known issues
 
--   Remaining bugs, things that have been left unfixed
--   Features that are buggy / flimsy
+-  Styling is a work in progress
 
 ---
 
 ## Future Goals
 
--   What are the immediate features you'd add given more time
+- Finalizing styling
+- Expanding on MSN Chat window behaviours
 
 ---
 
 ## Change logs
 
--   Write a paragraph labelled with the date every day you work on the project to discuss what you've done for the say. Be specific about the changes that have happened for that day.
-
-### 13/02/2022 - {Theme of changes if applicable}
-
--   Extended the expiry time of JWT tokens on the backend
--   Added users to cohort response payload
--   Centralized API base URL on frontend using the proxy `package.json` property
+- n/a
 
 ---
-
-## What did you struggle with?
-
--   What? Why? How?
-
----
-
-## Licensing Details
-
--   What type of license are you releasing this under?
-
----
-
-## Further details, related projects, reimplementations
-
--   Is this project a reimplementation for something you've done in the past? if so explain it and link it here.
--   If it's an API, is there a client app that works with this project? link it
